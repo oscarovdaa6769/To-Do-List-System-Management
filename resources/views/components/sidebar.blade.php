@@ -7,7 +7,7 @@
         <ul class="space-y-2">
             <li class="font-display text-md">Main</li>
             <li><a href="#" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-home-2-bold class="w-5 h-5"/>Dashboard</a></li>
-            <li><a href="#" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-checklist-minimalistic-bold class="w-5 h-5"/>All Tasks</a></li>
+            <li><a href="/all-tasks" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-checklist-minimalistic-bold class="w-5 h-5"/>All Tasks</a></li>
             <li><a href="#" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-calendar-bold class="w-5 h-5"/>Calendar</a></li>
             <li class="font-display text-md">Secondary</li>
             <li><a href="#" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-bell-bold class="w-5 h-5"/>Notifications</a></li>
