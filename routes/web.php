@@ -7,5 +7,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/all-tasks', [AllTaskController::class, 'index']);
-Route::post('/all-tasks', [AllTaskController::class, 'store']);
+Route::resource('tasks', AllTaskController::class);
+Route::patch('/tasks/{task}/toggle', [AllTaskController::class, 'toggle']);
