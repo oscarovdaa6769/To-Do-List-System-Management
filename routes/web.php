@@ -3,8 +3,9 @@ use App\Http\Controllers\UseraccountController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\DashboardController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AllTaskController;
+use App\Http\Controllers\CalendarController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AuthController;
 
@@ -30,4 +31,6 @@ Route::get('/account',[AccountController::class, 'index'])->name('acc')->middlew
 Route::get('/', function () {
     return redirect()->route('signup');
 });
+
+Route::resource('calendars', CalendarController::class);
 
