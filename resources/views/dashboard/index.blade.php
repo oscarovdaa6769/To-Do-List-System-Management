@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('content')
     <div class="ml-10 mt-6 block">
         <div class="flex justify-between mr-10">
@@ -7,7 +7,7 @@
                     Good Morning, Oscar
                 </h2>
                 <p class="font-bold font-display text-[20px] text-gray-500">
-                    Here’s what’s happening with your tasks today. 
+                    Here’s what’s happening with your tasks today.
                 </p>
             </div>
             <div class="flex gap-5 mt-4">
@@ -21,8 +21,8 @@
         </div>
         @include('dashboard.box-dashboard')
         <div class="mr-6">
-            @include('dashboard.under-box') 
+            @include('dashboard.under-box')
         </div>
-        
+
     </div>
 @endsection
