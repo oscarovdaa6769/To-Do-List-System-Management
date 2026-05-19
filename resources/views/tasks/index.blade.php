@@ -26,6 +26,7 @@
             </div>
         </form>
     </div>
+
     <div class="mt-8 flex gap-2 relative" x-data="{ show: false, selectedTasks: '{{ ucfirst(request('filter', 'All Tasks')) }}', taskValue: '{{ request('filter', 'all') }}' }">
         <input type="hidden" name="tasks" :value="taskValue">
         <button
@@ -67,12 +68,6 @@
                 Pending
             </li>
             <li
-                @click="window.location.href = '?filter=in-progress'"
-                class="border border-gray-200 rounded-2xl w-36 text-center px-4 py-2 bg-white hover:bg-primary hover:text-white hover:border-white cursor-pointer transition-opacity ease-in duration-200"
-            >
-                In-Progress
-            </li>
-            <li
                 @click="window.location.href = '?filter=completed'"
                 class="border border-gray-200 rounded-2xl w-36 text-center px-4 py-2 bg-white hover:bg-primary hover:text-white hover:border-white cursor-pointer transition-opacity ease-in duration-200"
             >
@@ -88,7 +83,7 @@
     </div>
     <div x-data="{ showModal: false, showEdit: false, currentTask: { id: null, task_title: '', priority: '', due_date: '' } }" class="mt-4 p-4 flex flex-col w-full h-full bg-background rounded-2xl">
         <div class="w-full flex justify-end">
-            <button @click="showModal = true" class="bg-primary hover:bg-secondary transition duration-150 ease-in px-4 py-2 text-white rounded-2xl flex items-center justify-between w-40">
+            <button @click="showModal = true" class="bg-primary hover:bg-secondary transition duration-150 ease-in px-4 py-2 text-white rounded-lg flex items-center justify-between w-40">
                 New Task <x-solar-add-circle-broken class="w-5 h-5"/>
             </button>
         </div>
@@ -190,7 +185,7 @@
             </div>
         </div>
 
-        <div class="bg-white mt-2 rounded-2xl overflow-hidden border border-gray-300 h-auto">
+        <div class="bg-white mt-2 rounded-lg overflow-hidden border border-gray-300 h-auto">
             <table class="w-full text-left">
                 <thead class="text-gray-500">
                     <tr>
@@ -264,13 +259,13 @@
                     Previous
                 </span>
             @else
-                <a href="{{ $tasks->previousPageUrl() }}" class="text-center border border-gray-300 bg-white hover:bg-primary hover:border-primary hover:text-white transition-all duration-150 ease-in rounded-2xl px-4 py-2 w-36">
+                <a href="{{ $tasks->previousPageUrl() }}" class="text-center border border-gray-300 bg-white hover:bg-primary hover:border-primary hover:text-white transition-all duration-150 ease-in rounded-lg px-4 py-2 w-36">
                     Previous
                 </a>
             @endif
             <span>Page {{ $tasks->currentPage() }} of {{ $tasks->lastPage() }}</span>
             @if ($tasks->hasMorePages())
-                <a href="{{ $tasks->nextPageUrl() }}" class="text-center border border-gray-300 bg-white hover:bg-primary hover:border-primary hover:text-white transition-all duration-150 ease-in rounded-2xl px-4 py-2 w-36">
+                <a href="{{ $tasks->nextPageUrl() }}" class="text-center border border-gray-300 bg-white hover:bg-primary hover:border-primary hover:text-white transition-all duration-150 ease-in rounded-lg px-4 py-2 w-36">
                     Next
                 </a>
             @else
