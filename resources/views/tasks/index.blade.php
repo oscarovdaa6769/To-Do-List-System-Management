@@ -81,7 +81,7 @@
             </li>
         </ul>
     </div>
-    <div x-data="{ showModal: false, showEdit: false, currentTask: { id: null, task_title: '', priority: '', due_date: '' } }" class="mt-4 p-4 flex flex-col w-full h-full bg-background rounded-2xl">
+    <div x-data="{ showModal: false, showEdit: false, currentTask: { id: '', task_title: '', priority: '', due_date: '' } }" class="mt-4 p-4 flex flex-col w-full h-full bg-background rounded-2xl">
         <div class="w-full flex justify-end">
             <button @click="showModal = true" class="bg-primary hover:bg-secondary transition duration-150 ease-in px-4 py-2 text-white rounded-lg flex items-center justify-between w-40">
                 New Task <x-solar-add-circle-broken class="w-5 h-5"/>

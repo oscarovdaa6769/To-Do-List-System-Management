@@ -11,11 +11,11 @@
                 </p>
             </div>
             <div class="flex gap-5 mt-4">
-                <div class="bg-blue-500 rounded-lg w-10 h-10 py-1.5 px-1">
-                    <i class="fa-solid fa-bell text-white text-[25px]"></i>
+                <div class="bg-blue-500 rounded-lg w-10 h-10 py-1.5 px-1 text-white flex justify-center items-center">
+                    <x-solar-bell-bold class="w-5 h-5"></x-solar-bell-bold>
                 </div>
-                <div class="bg-blue-500 rounded-lg w-10 h-10 py-1.5 px-1">
-                    <i class="fa-solid fa-inbox text-white text-[25px]"></i>
+                <div class="bg-blue-500 rounded-lg w-10 h-10 py-1.5 px-1 text-white flex justify-center items-center">
+                    <x-solar-inbox-bold class="w-5 h-5"></x-solar-inbox-bold>
                 </div>
             </div>
         </div>

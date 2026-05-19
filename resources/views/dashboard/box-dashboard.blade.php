@@ -9,8 +9,8 @@
                     <h2 class="font-bold text-[32px] pt-7 text-blue-500">{{ $total }}</h2>
                 </div>
                 <div class="block">
-                    <div class="bg-blue-500 rounded-lg w-10 h-10">
-                        <i class="fa-regular fa-file-lines text-white text-[25px] px-[11px] py-1.5"></i>
+                    <div class="bg-blue-500 rounded-lg w-10 h-10 text-white flex justify-center items-center">
+                        <x-solar-document-bold class="w-5 h-5"></x-solar-document-bold>
                     </div>
                 </div>
             </div>
@@ -24,8 +24,8 @@
                     <h2 class="font-bold text-[32px] pt-7 text-green-500">{{ $complete }}</h2>
                 </div>
                 <div class="block">
-                    <div class="bg-blue-500 rounded-lg w-10 h-10">
-                        <i class="fa-solid fa-check text-white text-[25px] px-2.5 py-1.5"></i>
+                    <div class="bg-blue-500 rounded-lg w-10 h-10 text-white flex justify-center items-center">
+                        <x-solar-check-circle-bold class="w-5 h-5"></x-solar-check-circle-bold>
                     </div>
                 </div>
             </div>
@@ -39,8 +39,8 @@
                     <h2 class="font-bold text-[32px] pt-7 text-[#f97316]" style="color:  #f97316;">{{ $pending }}</h2>
                 </div>
                 <div class="block">
-                    <div class="bg-blue-500 rounded-lg w-10 h-10">
-                        <i class="fa-regular fa-clock text-white text-[25px] px-2 py-2"></i>
+                    <div class="bg-blue-500 rounded-lg w-10 h-10 text-white flex justify-center items-center">
+                        <x-solar-clock-circle-bold class="w-5 h-5"></x-solar-clock-circle-bold>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@
                     <h2 class="font-bold text-[32px] pt-7 text-red-500">{{ $high }}</h2>
                 </div>
                 <div class="block">
-                    <div class="bg-blue-500 rounded-lg w-10 h-10">
-                        <i class="fa-solid fa-circle-exclamation text-white text-[25px] px-2 py-2"></i>
+                    <div class="bg-blue-500 rounded-lg w-10 h-10 text-white flex justify-center items-center">
+                        <x-solar-danger-circle-bold class="w-5 h-5"></x-solar-danger-circle-bold>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
 </div>
 
 
-   
+
 
 
 

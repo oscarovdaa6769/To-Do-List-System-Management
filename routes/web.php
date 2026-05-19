@@ -13,3 +13,4 @@ Route::get('/', function () {
 
 Route::resource('tasks', AllTaskController::class);
 Route::patch('/tasks/{task}/toggle', [AllTaskController::class, 'toggle']);
+Route::put('/tasks/{id}', [AllTaskController::class, 'update']);
