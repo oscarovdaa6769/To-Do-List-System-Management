@@ -2,18 +2,14 @@
 use App\Http\Controllers\UseraccountController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AllTaskController;
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('layout.app');
 });
-
-
-
-Route::get('/login',[LoginController::class, 'index']);
-Route::post('/login', [LoginController::class, 'store'])->name('login.store');
-
-Route::get('/signup', [SignupController::class, 'index']);
-Route::post('/signup', [SignupController::class, 'store'])->name('signup.store');
-
-Route::get('/user',[UseraccountController::class, 'index']);
+Route::resource('tasks', AllTaskController::class);
+Route::patch('/tasks/{task}/toggle', [AllTaskController::class, 'toggle']);

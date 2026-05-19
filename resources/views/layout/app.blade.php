@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=MuseoModerno:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -16,7 +17,7 @@
 <body>
     <div class="flex min-h-screen font-sans">
         <x-sidebar/>
-        <main class="flex-1 p-4 w-100 ml-64">
+        <main class="flex-1 w-full">
             @yield('content')
         </main>
     </div>
