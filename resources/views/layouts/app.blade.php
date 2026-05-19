@@ -16,7 +16,7 @@
 <body>
     <div class="flex h-auto font-sans">
         <x-sidebar/>
-        <main class="flex-1 flex flex-col min-w-0 p-8 pb-4 w-full">
+        <main class="flex-1 flex flex-col min-w-0 p-8 pb-4 w-full ml-64">
             @yield('content')
         </main>
     </div>

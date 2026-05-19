@@ -1,4 +1,4 @@
-<aside class="bg-primary text-white w-64 min-h-screen">
+<aside class="bg-primary text-white w-64 min-h-screen fixed">
     <div class="px-4 py-8 flex items-center">
         <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-8 w-8">
         <h1 class="text-xl font-bold ml-2 font-display">impleTrack To-Do</h1>
@@ -12,7 +12,7 @@
             <li><a href="{{ route('setting.index') }}" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-settings-minimalistic-bold class="w-5 h-5"/>Setting</a></li>
         </ul>
     </nav>
-    <div class="p-4 fixed bottom-0 w-64">
+    <div class="p-4 absolute bottom-0 w-64">
         <div class="profile flex items-center mb-4">
             <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
             <div class="ml-3">
