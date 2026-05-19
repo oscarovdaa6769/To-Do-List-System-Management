@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('priority')->default('medium')->nullable();
             $table->date('due_date')->nullable();
             $table->boolean('completed')->default(false);
+            $table->string('status');
             $table->timestamps();
         });
     }

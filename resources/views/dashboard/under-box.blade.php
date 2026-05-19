@@ -49,7 +49,7 @@
     </div>
     <div class="flex justify-between mt-2 text-sm" style="color: #FF0000;">
         <div>
-            <p>{{ $highPercent }}% Pending</p>
+            <p>{{ $highPercent }}% High-priority</p>
         </div>
         <div>
             <a href="#" style="border: 1px solid #FF0000    ; color: #FF0000;" 
