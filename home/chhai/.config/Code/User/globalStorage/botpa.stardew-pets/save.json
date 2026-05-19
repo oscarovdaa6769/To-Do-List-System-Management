@@ -1,0 +1,11 @@
+{
+    "money": 560,
+    "pets": [
+        {
+            "specie": "Horse",
+            "name": "Artyom",
+            "color": ""
+        }
+    ],
+    "decoration": []
+}

@@ -21,8 +21,16 @@
                 <p class="text-md font-medium font-display">John Doe</p>
             </div>
         </div>
-        <button class="w-full bg-secondary text-white px-6 py-2 rounded-lg hover:bg-secondary/80 flex items-center gap-2">
-            <x-solar-logout-bold class="w-5 h-5"/>Logout
-        </button>
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+
+            <button
+                type="submit"
+                class="w-full bg-secondary text-white px-6 py-2 rounded-lg hover:bg-secondary/80 flex items-center gap-2"
+            >
+                <x-solar-logout-bold class="w-5 h-5"/>
+                Logout
+            </button>
+        </form>
     </div>
 </aside>
