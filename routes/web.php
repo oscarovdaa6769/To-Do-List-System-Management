@@ -10,5 +10,3 @@ Route::get('/', function () {
 
 Route::resource('tasks', AllTaskController::class);
 Route::patch('/tasks/{task}/toggle', [AllTaskController::class, 'toggle']);
-
-Route::resource('calendars', CalendarController::class);
