@@ -14,7 +14,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-    <div class="flex h-auto font-sans">
+    <div class="flex h-screen font-sans">
         <x-sidebar/>
         <main class="flex-1 flex flex-col min-w-0 p-8 pb-4 w-full ml-64">
             @yield('content')
