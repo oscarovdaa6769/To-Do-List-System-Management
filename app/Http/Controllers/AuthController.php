@@ -24,7 +24,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('acc');
+        return redirect()->route('dashboard');
     }
     public function showLogin()
     {
@@ -38,10 +38,32 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('acc');
+        return redirect()->route('dashboard');
     }
 
     return back()->with('error', 'Invalid credentials');
 
     }
+    // public function update(Request $request)
+    // {
+    //     $user = Auth::user();
+
+    //     $request->validate([
+    //         'name' => 'required',
+    //         'email' => 'required|email',
+    //         'password' => 'nullable|min:6|same:password_confirmation',
+    //     ]);
+
+    //     $user->name = $request->name;
+    //     $user->email = $request->email;
+
+    //     // ONLY UPDATE PASSWORD IF USER TYPES ONE
+    //     if ($request->password) {
+    //         $user->password = Hash::make($request->password);
+    //     }
+
+    //     $user->save();
+
+    //     return back()->with('success', 'Account updated successfully');
+    // }
 }

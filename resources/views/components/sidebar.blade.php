@@ -14,12 +14,14 @@
         </ul>
     </nav>
     <div class="p-4 absolute bottom-0 w-full">
-        <div class="profile flex items-center mb-4">
-            <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
-            <div class="ml-3">
-                <p class="text-md font-medium font-display">John Doe</p>
-            </div>
-        </div>
+        <form action="{{ route('acc') }}">
+            <button class="profile flex items-center mb-4" type="submit">
+                <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
+                <div class="ml-3">
+                    <p class="text-md font-medium font-display">{{Auth::user()->name }}</p>
+                </div>
+            </button>
+        </form>
         <form action="{{ route('logout') }}" method="POST">
             @csrf
 
