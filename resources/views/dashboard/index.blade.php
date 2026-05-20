@@ -3,7 +3,7 @@
     <div class="block">
         <div class="flex justify-between">
             <div class="">
-                <h1 class="text-2xl font-bold font-display">Good Morning, {{Auth::user()->name ?? 'User'}}!</h1>
+                <h1 class="text-2xl font-bold font-display">Good Afternoon, {{Auth::user()->name ?? 'User'}}!</h1>
                 <p class="text-gray-700">Here’s what’s happening with your tasks today.</p>
             </div>
             <div class="flex gap-2 mt-4">

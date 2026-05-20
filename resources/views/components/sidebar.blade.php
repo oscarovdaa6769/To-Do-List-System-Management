@@ -14,7 +14,7 @@
     </nav>
     <div class="p-4 absolute bottom-0 w-full">
         <form action="{{ route('account.index') }}">
-            <button class="profile flex items-center mb-4" type="submit">
+            <button class="profile flex items-center mb-4 cursor-pointer" type="submit">
                 <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
                 <div class="ml-3">
                     <p class="text-md font-medium font-display">{{Auth::user()->name ?? 'User'}}</p>
