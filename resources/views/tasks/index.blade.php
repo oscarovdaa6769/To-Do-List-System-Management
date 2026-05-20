@@ -96,7 +96,7 @@
                         <x-solar-close-circle-bold class="w-5 h-5"></x-solar-close-circle-bold>
                     </button>
                 </div>
-                <form action="{{ route('tasks.store') }}" method="POST" class="space-y-4 h-auto>
+                <form action="{{ route('tasks.store') }}" method="POST" class="space-y-4 h-auto">
                     @csrf
                     <div class="space-y-2">
                         <label class="block text-sm font-medium">Task Title</label>

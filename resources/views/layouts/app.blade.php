@@ -11,10 +11,10 @@
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Alpine.js -->
- 
+
 </head>
 <body>
-    <div class="flex h-screen font-sans">
+    <div class="flex h-auto font-sans">
         <x-sidebar/>
         <main class="flex-1 flex flex-col min-w-0 p-8 pb-4 w-full">
             @yield('content')
