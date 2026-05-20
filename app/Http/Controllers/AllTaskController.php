@@ -40,6 +40,7 @@ class AllTaskController extends Controller
             'task_title' => $request->input('task_title'),
             'priority' => $request->input('priority'),
             'due_date' => $request->input('due_date'),
+            'status' => $request->input('status'),
         ]);
 
         return redirect()->back()->with('success', 'Task created :)');
