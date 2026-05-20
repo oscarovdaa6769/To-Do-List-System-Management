@@ -4,10 +4,10 @@ use App\Http\Controllers\AllTaskController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SettingsController;
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/setting', [SettingController::class, 'index'])->name('setting.index');
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
 Route::resource('tasks', AllTaskController::class);
 Route::patch('/tasks/{task}/toggle', [AllTaskController::class, 'toggle']);
 
@@ -31,3 +31,8 @@ Route::get('/', function () {
     return redirect()->route('signup');
 });
 
+
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
+
+Route::patch('/settings/preferences', [SettingsController::class, 'updatePreferences'])->name('settings.preferences.update');
+Route::patch('/settings/notifications', [SettingsController::class, 'updateNotifications'])->name('settings.notifications.update');
