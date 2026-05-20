@@ -1,4 +1,4 @@
-<aside class="bg-primary text-white w-64 h-screen relative">
+<aside class="bg-primary text-white w-64 h-screen fixed">
     <div class="px-4 py-8 flex items-center">
         <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-8 w-8">
         <h1 class="text-xl font-bold ml-2 font-display">impleTrack To-Do</h1>
@@ -18,7 +18,7 @@
             <button class="profile flex items-center mb-4" type="submit">
                 <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
                 <div class="ml-3">
-                    <p class="text-md font-medium font-display">{{Auth::user()->name }}</p>
+                    <p class="text-md font-medium font-display">{{Auth::user()->name ?? 'User'}}</p>
                 </div>
             </button>
         </form>
