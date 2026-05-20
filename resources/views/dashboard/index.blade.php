@@ -4,7 +4,7 @@
         <div class="flex justify-between mr-10">
             <div class="block">
                 <h2 class="font-bold font-display text-[32px]">
-                    Good Morning, Oscar
+                    Good Morning, {{Auth::user()->name}}
                 </h2>
                 <p class="font-bold font-display text-[20px] text-gray-500">
                     Here’s what’s happening with your tasks today.
