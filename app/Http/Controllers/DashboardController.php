@@ -7,9 +7,9 @@ class DashboardController extends Controller
     public function index()
     {
         $total    = Task::count();
-        $pending  = Task::where('status', 'pending')->count();
-        $complete = Task::where('status', 'complete')->count();
-        $high     = Task::where('priority', 'high priority')->count();
+        $pending  = Task::where('completed', false)->count();
+        $complete = Task::where('completed', true)->count();
+        $high     = Task::where('priority', 'high')->count();
         $completePercent   = Task::latest()->take($total)->get();
         $pendingPercen = Task::latest()->take($total)->get();
         $highPercent = Task::latest()->take($total)->get();

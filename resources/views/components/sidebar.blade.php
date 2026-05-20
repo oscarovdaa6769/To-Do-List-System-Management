@@ -9,12 +9,11 @@
             <li><a href="{{ route('dashboard') }}" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-home-2-bold class="w-5 h-5"/>Dashboard</a></li>
             <li><a href="{{ route('tasks.index') }}" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-checklist-minimalistic-bold class="w-5 h-5"/>All Tasks</a></li>
             <li class="font-display text-md">Secondary</li>
-            <li><a href="#" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-bell-bold class="w-5 h-5"/>Notifications</a></li>
             <li><a href="{{ route('setting.index') }}" class="hover:bg-secondary px-6 py-2 flex items-center gap-2 rounded-lg"><x-solar-settings-minimalistic-bold class="w-5 h-5"/>Settings</a></li>
         </ul>
     </nav>
     <div class="p-4 absolute bottom-0 w-full">
-        <form action="{{ route('acc') }}">
+        <form action="{{ route('account.index') }}">
             <button class="profile flex items-center mb-4" type="submit">
                 <img src="{{ asset('images/profile.png') }}" alt="Profile" class="h-10 w-10 rounded-full">
                 <div class="ml-3">
