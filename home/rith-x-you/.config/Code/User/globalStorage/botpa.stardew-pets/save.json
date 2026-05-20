@@ -1,0 +1,16 @@
+{
+    "money": 1515,
+    "pets": [
+        {
+            "specie": "Cat",
+            "name": "Oliva",
+            "color": "Black"
+        },
+        {
+            "specie": "Junimo",
+            "name": "Adri",
+            "color": "White"
+        }
+    ],
+    "decoration": []
+}
